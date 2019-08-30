@@ -1,7 +1,8 @@
 package com.rakuten.internship.entity;
 
 import javax.persistence.*;
-import lombok.*;
+
+// import lombok.*; // 恐らく lombok の jar ファイルをインストールする必要ありか(?)
 
 /**
  * このクラスは、タスク管理の対象となるTodoのエンティティーです。
