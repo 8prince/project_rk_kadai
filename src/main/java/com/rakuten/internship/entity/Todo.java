@@ -12,11 +12,12 @@ import lombok.Data;
 public class Todo {
     // TODO 必要なコードを記入してください。
     
+    @Id
     public int id;
- 
     public String title;    
- 
     public String description;
+    
+    public Todo() {}
     
     public Todo(int id, String title, String description){
         this.id = id;
