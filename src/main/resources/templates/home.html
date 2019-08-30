@@ -2,23 +2,7 @@
   <title>Summer Short Internship 2019</title>
   <script type="text/javascript">
   // TODO ボタンを制御するためのJSコードを作成してください。
-    var click_button = document.getElementById("btn");
-    var but = function() {
-      var form = document.createElement('form');
-      var request = document.createElement('input');
-         
-      form.method = 'GET';
-      form.action = '/create';
-         
-      request.type = 'hidden'; //入力フォームが表示されないように
-      request.name = 'text';
-         
-      form.appendChild(request);
-      document.body.appendChild(form);
-         
-      form.submit();
-    };
-    click_button.onclick = but;
+  // ここに書くと btn が反応無
   </script>
   <body>
     <h1>
@@ -41,5 +25,24 @@
     </table>
     <br>
     <button id="btn" value="Click">Go to the form</button>
+    <script>
+      var p_btn = document.getElementById("btn");
+      var func = function() {
+        var form = document.createElement('form');
+        var input = document.createElement('input');
+         
+        form.method = 'GET';
+        form.action = '/create';
+         
+        input.type = 'hidden';
+        input.name = 'text';
+         
+        form.appendChild(input);
+        document.body.appendChild(form);
+         
+        form.submit();
+      };
+      p_btn.onclick = func;
+    </script>
   </body>
 </html>
