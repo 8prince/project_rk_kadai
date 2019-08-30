@@ -2,23 +2,7 @@
   <title>Summer Short Internship 2019</title>
   <script type="text/javascript">
   // TODO ここにボタンを制御するためのJSコードを記入してください。
-    var click_button = document.getElementById("btn");
-    var but = function() {
-      var form = document.createElement('form');
-      var request = document.createElement('input');
-         
-      form.method = 'GET';
-      form.action = '/';
-         
-      request.type = 'hidden'; //入力フォームが表示されないように
-      request.name = 'text';
-         
-      form.appendChild(request);
-      document.body.appendChild(form);
-         
-      form.submit();
-    };
-    click_button.onclick = but;
+  // home.html 同様
   </script>
   <body>
     	<h1>
@@ -29,5 +13,24 @@
 
       <br><br>
     <button id="btn" value="Back">Back</button>
+    <script>
+      var p_btn = document.getElementById("btn");
+      var func = function() {
+        var form = document.createElement('form');
+        var back = document.createElement('back');
+         
+        form.method = 'GET';
+        form.action = '/';
+         
+        back.type = 'hidden';
+        back.name = 'text';
+         
+        form.appendChild(back);
+        document.body.appendChild(form);
+         
+        form.submit();
+      };
+      p_btn.onclick = func;
+    </script>
   </body>
 </html>
