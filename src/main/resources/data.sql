@@ -1,2 +1,4 @@
-INSERT INTO tasks(number, title, description) VALUES(1, '掃除', 'お風呂，台所，玄関');
-INSERT INTO tasks(number, title, description) VALUES(2, '勉強', '英語，数学');
+INSERT INTO tasks(number, title, description) VALUES(1, '111', '111');
+INSERT INTO tasks(number, title, description) VALUES(2, '222', '222');
+INSERT INTO tasks(number, title, description) VALUES(3, '222', '222');
+INSERT INTO tasks(number, title, description) VALUES(4, 'aaa', 'bbb');
