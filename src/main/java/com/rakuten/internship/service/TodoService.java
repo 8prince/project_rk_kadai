@@ -1,7 +1,5 @@
 package com.rakuten.internship.service;
 
-import java.util.List;
-
 import com.rakuten.internship.entity.Todo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,7 +40,7 @@ public class TodoService {
         Todo todo = new Todo();
         todo.setId(((Integer) map.get("number")).intValue());
         todo.setTitle((String) map.get("title"));
-        todo.setContents((String) map.get("description"));
+        todo.setDescription((String) map.get("description"));
         return todo;
     }
     
@@ -53,7 +51,7 @@ public class TodoService {
             + ",'" 
             + todo.getTitle()
             + "','"
-            + todo.getContents()
+            + todo.getDescription()
             + "');";
         jdbcTemplate.update(sql);        
         
@@ -63,7 +61,6 @@ public class TodoService {
 
     public int returnRecords(){
         List list = jdbcTemplate.queryForList("select * from tasks");
-//        return jdbcTemplate.queryForInt("select count(*) from tasks");
         return list.size();
     }
 }
