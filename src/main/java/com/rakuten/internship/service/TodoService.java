@@ -36,6 +36,7 @@ public class TodoService {
         return todos;
     }
     
+    // try ～ catch 使えばいけそうな気もするが…
     private Todo createTodo(Map map) {
         Todo todo = new Todo();
         todo.setId(((Integer) map.get("number")).intValue());
@@ -46,7 +47,7 @@ public class TodoService {
     
     public Todo save(Todo todo) {
         // TODO 必要なコードを作成してください。
-        String sql = "INSERT INTO tasks(number, title, description) VALUES("
+        String sql = "insert into tasks(number, title, description) values("
             + todo.getId()
             + ",'" 
             + todo.getTitle()

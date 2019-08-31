@@ -2,7 +2,7 @@ package com.rakuten.internship.entity;
 
 import javax.persistence.*;
 
-// import lombok.*; // 恐らく lombok の jar ファイルをインストールする必要ありか(?)
+// import lombok.*; // lombok の jar ファイルをインストールする必要アリ(?)
 
 /**
  * このクラスは、タスク管理の対象となるTodoのエンティティーです。
@@ -19,8 +19,6 @@ public class Todo {
     public int id;
     public String title;    
     public String description;
-    
-    public Todo() {}
     
     public int getId() {
         return this.id;
@@ -45,6 +43,8 @@ public class Todo {
     public void setDescription(String description) {
         this.description = description;
     }
+    
+    public Todo() {}
     
     public Todo(int id, String title, String description) {
         this.id = id;

@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * このクラスは、ウェブアプリケーションの挙動を制御するためのコントローラークラスです。。
@@ -44,7 +43,7 @@ public class TodoController {
 
     @PostMapping("/create")
     public String createTodo(@ModelAttribute Todo todo,
-                             @RequestParam("text1")String str1, 
+                             @RequestParam("text1") String str1, 
                              @RequestParam("text2")String str2) {
         // TODO 必要なコードを作成してください。
         todo.setId(todoService.returnRecords() + 1);
