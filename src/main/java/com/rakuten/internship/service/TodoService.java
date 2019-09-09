@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.data.jpa.repository.JpaRepository;
+//import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Iterator;
+//import java.util.Map;
+//import java.util.Iterator;
 
 /**
  * このクラスは、データベースとのトランザクションをサポートするサービスクラスです。。
